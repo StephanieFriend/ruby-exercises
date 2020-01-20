@@ -1,11 +1,12 @@
 class Centaur
-#class constant 
+#class constant
   MAX_ACTIONS_BEFORE_CRANKY = 3
 #identify external variables
-  attr_reader :name,
-              :breed,
-              :laying
-  @action #identify internal variables
+  @attr_reader = attr_reader :name,
+                             :breed,
+                             :laying
+  @attr_reader
+  @action_count #identify internal variables
 
 #assign all variables
   def initialize(name, breed)
