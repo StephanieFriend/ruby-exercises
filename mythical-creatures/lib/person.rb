@@ -9,6 +9,6 @@ class Person
   end
 
   def stoned?
-    @stoned
+    return @stoned
   end
 end

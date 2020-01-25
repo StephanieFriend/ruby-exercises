@@ -2,7 +2,8 @@ class Medusa
 
   MAX_ALLOWED_VICTIMS = 3
 
-  attr_reader :name, :statues
+  attr_reader :name,
+              :statues
 
   def initialize(name)
     @name = name
