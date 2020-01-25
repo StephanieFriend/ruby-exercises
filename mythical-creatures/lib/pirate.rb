@@ -1,6 +1,11 @@
 class Pirate
 
-  attr_reader :name, :job, :booty
+  MAX_CRIME_BEFORE_CURSED = 3
+
+  attr_reader :name,
+              :job,
+              :booty
+  @crime
 
   def initialize(name, job = "Scallywag")
     @name = name
@@ -10,7 +15,7 @@ class Pirate
   end
 
   def cursed?
-    @crime >= 3
+    return @crime >= MAX_CRIME_BEFORE_CURSED
   end
 
   def commit_heinous_act
@@ -18,6 +23,6 @@ class Pirate
   end
 
   def rob
-    @booty += 100
+    return @booty += 100
   end
 end
