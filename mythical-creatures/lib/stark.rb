@@ -11,7 +11,7 @@ class Stark
   end
 
   def safe?
-    @safe
+    return @safe
   end
 
   def house_words

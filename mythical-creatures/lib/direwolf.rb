@@ -1,5 +1,7 @@
 class Direwolf
 
+  MAX_STARKS_IT_CAN_PROTECT = 2
+
   attr_reader :name,
               :home,
               :size,
@@ -13,7 +15,7 @@ class Direwolf
   end
 
   def protects(stark)
-    if (@home == stark.location) && (@starks_to_protect.length < 2)
+    if (@home == stark.location) && (@starks_to_protect.length < MAX_STARKS_IT_CAN_PROTECT)
       @starks_to_protect << stark
       stark.safe = true
     end
