@@ -5,7 +5,6 @@ class Centaur
   @attr_reader = attr_reader :name,
                              :breed,
                              :laying
-  @attr_reader
   @action_count #identify internal variables
 
 #assign all variables
