@@ -1,6 +1,10 @@
 class Wizard
 
-  attr_reader :name, :bearded
+  MAX_SPELLS_BEFORE_NOT_RESTED = 3
+
+  attr_reader :name,
+              :bearded
+  @spell_count
 
   def initialize(name, bearded: true)
     @name = name
@@ -9,15 +13,15 @@ class Wizard
   end
 
   def bearded?
-    @bearded
+    return @bearded
   end
 
   def incantation(spell)
-    "sudo " + "#{spell}"
+    return "sudo " + spell
   end
 
   def rested?
-    @spell_count < 3
+    return @spell_count < MAX_SPELLS_BEFORE_NOT_RESTED
   end
 
   def cast(charm)
