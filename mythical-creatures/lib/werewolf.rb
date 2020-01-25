@@ -15,11 +15,11 @@ class Werewolf
   end
 
   def human?
-    @human
+    return @human
   end
 
   def wolf?
-    !@human
+    return !@human
   end
 
   def change!
@@ -28,7 +28,7 @@ class Werewolf
   end
 
   def hungry?
-    @hungry
+    return @hungry
   end
 
   def consume(victim)
