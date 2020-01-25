@@ -1,6 +1,8 @@
 class Ogre
 
-  attr_reader :name, :home, :swings
+  attr_reader :name,
+              :home,
+              :swings
 
   def initialize(name, home = "Swamp")
     @name = name
