@@ -1,6 +1,11 @@
 class Dragon
 
-  attr_reader :name, :rider, :color
+  AMOUNT_OF_FOOD_NEEDED_TO_MAKE_NOT_HUNGRY = 3
+
+  attr_reader :name,
+              :rider,
+              :color
+  @food
 
   def initialize(name, color, rider)
     @name = name
@@ -10,10 +15,10 @@ class Dragon
   end
 
   def hungry?
-    !(@food >= 3)
+    return !(@food >= AMOUNT_OF_FOOD_NEEDED_TO_MAKE_NOT_HUNGRY)
   end
 
   def eat
-    @food += 1
+    return @food += 1
   end
 end
